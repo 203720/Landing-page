@@ -1,0 +1,22 @@
+{
+  "opinions": [
+    {
+      "id": 1,
+      "usuario": "Susana Díaz Flores",
+      "calificacion": "10",
+      "comentario": "Me fascinan los diseños y el estilo de las prendas que adquirí, hice mi compra en línea y me dieron una atención súper personalizada lo cual me sirvió mucho a decidir. El envío súper rápido y me encantó tanto la tela como el corte de mi gabardina. Gracias. Los recomiendo."
+    },
+    {
+      "id": 4,
+      "usuario": "Emilio",
+      "calificacion": 9,
+      "comentario": "Muy buen servicio y calidad de los productos adquiridos, sin duda volveré a comprar próximamente!."
+    },
+    {
+      "id": 5,
+      "usuario": "Mario",
+      "calificacion": 7,
+      "comentario": "Tardo en llegar mi pedido."
+    }
+  ]
+}
