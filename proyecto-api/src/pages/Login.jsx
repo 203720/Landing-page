@@ -3,10 +3,7 @@ import '../css/login.css'
 
 export const Login = () => {
   return(
-  
-  <div className="container">
-    <div className="wrapper">
-      <div className="cuadro">    
+    
         <div className="contact-wrapper-login">
           <div className="login">
             <h1>Iniciar Sesión</h1>
@@ -19,9 +16,7 @@ export const Login = () => {
             </form>
           </div>
         </div>
-      </div>
-    </div>
-  </div>)
+  )
 }
 
 export default Login
