@@ -3,7 +3,6 @@ import '../css/login.css'
 
 export const Login = () => {
   return(
-    <div>
   
   <div className="container">
     <div className="wrapper">
@@ -22,8 +21,7 @@ export const Login = () => {
         </div>
       </div>
     </div>
-  </div>
-</div>)
+  </div>)
 }
 
 export default Login
