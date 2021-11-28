@@ -6,7 +6,7 @@ export const nosotros = () => {
           <div>
   <div className="cuadro">
     <div className="logoCuadro">
-      <img src="recursos/logo2.png" className="logoCuadro" />
+      <img src="recursos/logo.png" className="logoCuadro" />
     </div>
     <div className="textCuadro">
       <p>Somos una empresa dedicada a la comercializacion de ropa para todos de estilo vintage, esta es nuestra pagina oficial online con la posibilidad de adquirir nuestros productos desde casa, sin necesidad de buscar y buscar o asistir a sucursales
