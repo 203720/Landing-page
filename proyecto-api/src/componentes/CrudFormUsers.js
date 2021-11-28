@@ -43,19 +43,20 @@ const CrudFormUsers =({agregarRegistro, actualizarRegistro, datoEditar, setDatoE
           setDatoEditar(null);
      };
 
-     return(
-                         <div class = "reseña">
-                              <h1 class="h1">Registrate</h1>
+     return(        
+           <div class = "login">
+                              <h1>Registrate</h1>
                               <form onSubmit={handleSubmit}>
-                                   <input type="text" name = "user" placeholder="user" onChange={handleChange} value={form.user}/>
+                                   <input type="text" name = "user" placeholder="Usuario" onChange={handleChange} value={form.user}/>
                                    <input type="email" name = "email" placeholder="user@gmail.com" onChange={handleChange} value={form.email}/>
                                    <input type="password" name = "password" placeholder="password" onChange={handleChange} value={form.password}/>
                                    <div class="d-grid gap-2 d-md-block">
-                                        <button class= "btn btn-success" type="submit">Registrarse</button>
-                                        <button class="btn btn-info" type="reset" onClick={handleReset}>Limpiar</button>
+                                        <button id="signin" className="btn btn-primary btn-block btn-large" type="submit">Registrarse</button>
+                                        <button id="signin" className="btn btn-primary btn-block btn-large"  type="reset" onClick={handleReset}>Limpiar</button>
                                    </div>
                               </form>
                          </div>
+
      );
 };
 
