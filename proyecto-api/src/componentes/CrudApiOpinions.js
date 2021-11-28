@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState }  from 'react'
 import {helpHttp} from "../helpers/helpHTTP";
 import  CrudFormOpinions  from './CrudFormOpinions';
 import CrudTableOpinions from "./CrudTableOpinions";
@@ -116,3 +116,5 @@ const CrudApiOpinions = () => {
         </div>
     )
 }
+
+export default CrudApiOpinions
