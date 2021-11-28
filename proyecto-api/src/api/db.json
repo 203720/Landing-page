@@ -2,7 +2,7 @@
   "opinions": [
     {
       "id": 1,
-      "usuario": "Susana Díaz Flores",
+      "usuario": "Susana",
       "calificacion": "10",
       "comentario": "Me fascinan los diseños y el estilo de las prendas que adquirí, hice mi compra en línea y me dieron una atención súper personalizada lo cual me sirvió mucho a decidir. El envío súper rápido y me encantó tanto la tela como el corte de mi gabardina. Gracias. Los recomiendo."
     },
@@ -17,6 +17,27 @@
       "usuario": "Mario",
       "calificacion": 7,
       "comentario": "Tardo en llegar mi pedido."
+    }
+  ],
+
+    "users": [
+    {
+      "id": 1,
+      "user": "Susana",
+      "email": "susana@gmail.com",
+      "password":"sus1234"
+    },
+    {
+      "id": 2,
+      "user": "Emilio",
+      "email": "emilio@gmail.com",
+      "password":"9876emi"
+    },
+    {
+      "id": 3,
+      "user": "Azul",
+      "email": "azul@gmail.com",
+      "password":"az20304"
     }
   ]
 }
