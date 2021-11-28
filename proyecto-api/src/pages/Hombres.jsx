@@ -7,7 +7,7 @@ export const Hombres = () => {
   <h1>CABALLEROS</h1>
   <div className="card-colums">
     <div className="card" style={{width: '18rem'}}>
-      <img className="card-img-top" src="recursos/boina_h.jpg" alt="Card image cap" />
+      <img className="card-img-top" src="recursos/boina.jpg" alt="Card image cap" />
       <div className="card-body">
         <h5 className="card-title">Boina - $189</h5>
         <p className="card-text">Boina azul suiza<br />Colores: Azul / Negra<br />Envío grátis</p>
@@ -31,7 +31,7 @@ export const Hombres = () => {
       </div>
     </div>
     <div className="card" style={{width: '18rem'}}>
-      <img className="card-img-top" src="recursos/boina_n2.jpeg" alt="Card image cap" />
+      <img className="card-img-top" src="recursos/boina2.jpeg" alt="Card image cap" />
       <div className="card-body">
         <h5 className="card-title">Boina - $199</h5>
         <p className="card-text">Boina rosa palo unisex<br />Colores: Rosa palo<br />Envío grátis</p>
