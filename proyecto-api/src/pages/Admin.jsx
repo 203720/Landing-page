@@ -1,11 +1,11 @@
 import React from 'react'
-import CrudApiUsers from '../Componentes/CrudApiUsers';
+import CrupApiUsersAdmin from '../componentes/CrupApiUsersAdmin';
 
 export const Admin = () => {
      return (
 <div>
      <>
-    <CrudApiUsers/>
+    <CrupApiUsersAdmin/>
     </>
 </div>
      )
