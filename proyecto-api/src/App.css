@@ -1,39 +1,190 @@
-/*
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes transitionIn {
+    from {
+      opacity: 0.8;
+      transform: translateY(-10px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.btn { display: inline-block; *display: inline; *zoom: 1; padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; color: #333333; text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(top, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0); border-color: #e6e6e6 #e6e6e6 #e6e6e6; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #e6e6e6; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); cursor: pointer; *margin-left: .3em; }
+.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background-color: #e6e6e6; }
+.btn-large { padding: 9px 14px; font-size: 15px; line-height: normal; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.btn:hover { color: #333333; text-decoration: none; background-color: #e6e6e6; background-position: 0 -15px; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear; }
+.btn-primary, .btn-primary:hover { text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); color: #ffffff; }
+.btn-primary.active { color: rgba(255, 255, 255, 0.75); }
+.btn-primary { margin-top: 20%; background-color: #0596b6; background-image: -moz-linear-gradient(top, #6eb6de, #0085a3); background-image: -ms-linear-gradient(top, #6eb6de, #0596b6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6eb6de), to(#0596b6)); background-image: -webkit-linear-gradient(top, #6eb6de, #0596b6); background-image: -o-linear-gradient(top, #6eb6de, #0596b6); background-image: linear-gradient(top, #6eb6de, #0596b6); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#6eb6de, endColorstr=#0596b6, GradientType=0);  border: 1px solid #009fc2; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); }
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { filter: none; background-color: #0596b6; border: 1px solid #009fc2;}
+.btn-block { width: 100%; display:block; }
+
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+
+html { width: 100%; height:100%; overflow:hidden; }
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    overflow-x: hidden;
+	width: 100%;
+	height:100%;
+	font-family: 'Open Sans', sans-serif;
+	background: #092756;
+	background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #0590af 0%, #e2e2e2 100%);
+	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #0590af 0%,#e2e2e2 100%);
+	background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #0590af 0%,#e2e2e2 100%);
+	background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #0590af 0%,#e2e2e2 100%);
+	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #0590af 0%,#e2e2e2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+    animation: transitionIn 1s;
+    overflow: scroll;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body::-webkit-scrollbar {
+    width: 0.4em;
 }
 
-.App-link {
-  color: #61dafb;
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-*/
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 159, 177);
+  outline: 1px solid rgb(0, 159, 177);
+}
+
+.menu{
+    position: relative;
+}
+
+.ani-menu{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-3em);
+    z-index: -1;
+    transition: all 0.5s ease 0s, visibility 0s linear 0.5s, z-index 0s linear 0.5s;
+}
+
+.menu:focus .anti-menu,
+.menu:focus-within .ani-menu,
+.menu:hover .ani-menu{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+    transition-delay: 0s, 0s, 0s;
+
+}
+
+nav a{
+    color: white;
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.anti-menu a{
+    width: 70%;
+    padding: 15px 20px;
+    font-family: sans-serif;
+}
+
+nav ul, nav ul li{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+nav > ul{
+    text-align: center;
+    background-color: rgb(29, 29, 29);
+}
+
+nav > ul > li{
+    display: inline-block;
+}
+
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight:500;
+  color: rgb(255, 255, 255);
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: rgb(0, 124, 138);
+  filter: brightness(130%);
+  height: 4px;
+  text-shadow: 2px 2px 4px white;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  text-decoration: none;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:hover, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 8px rgb(255, 255, 255);
+  left: 0;
+  right: 0;
+}
+
+.icon{
+    float: right;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+   footer{
+      margin-top: 50px;
+      background-color: rgb(29, 29, 29);
+      position: absolute;
+      height: 8%;
+      width: 100%;
+      color: rgb(233, 233, 233);
+      text-align: center;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+    }
+
+    .socialLogos{
+      margin-top: 21px;
+      width: 150px;
+      position: absolute;
+      top: 1%;
+      left: 3%;
+      display: flex;
+    }
+
+    .socialLogos2{
+      margin-top: 20px;
+      width: 130px;
+      position: absolute;
+      top: 1%;
+      left: 7%;
+      display: flex;
+    }
