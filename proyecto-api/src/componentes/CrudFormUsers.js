@@ -44,7 +44,8 @@ const CrudFormUsers =({agregarRegistro, actualizarRegistro, datoEditar, setDatoE
      };
 
      return(        
-           <div class = "login">
+           <div className="contact-wrapper-login">
+                <div class = "login">
                               <h1>Registrate</h1>
                               <form onSubmit={handleSubmit}>
                                    <input type="text" name = "user" placeholder="Usuario" onChange={handleChange} value={form.user}/>
@@ -56,6 +57,7 @@ const CrudFormUsers =({agregarRegistro, actualizarRegistro, datoEditar, setDatoE
                                    </div>
                               </form>
                          </div>
+           </div>
 
      );
 };
