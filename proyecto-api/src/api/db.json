@@ -19,25 +19,30 @@
       "comentario": "Tardo en llegar mi pedido."
     }
   ],
-
-    "users": [
+  "users": [
     {
       "id": 1,
       "user": "Susana",
       "email": "susana@gmail.com",
-      "password":"sus1234"
+      "password": "sus1234"
     },
     {
       "id": 2,
       "user": "Emilio",
       "email": "emilio@gmail.com",
-      "password":"9876emi"
+      "password": "9876emi"
     },
     {
       "id": 3,
       "user": "Azul",
       "email": "azul@gmail.com",
-      "password":"az20304"
+      "password": "az20304"
+    },
+    {
+      "user": "azul",
+      "email": "azul.briones.09@gmail.com",
+      "password": "dio",
+      "id": 1638080595481
     }
   ]
 }
