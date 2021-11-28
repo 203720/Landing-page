@@ -1,5 +1,5 @@
 import React from 'react'
-import CrudApiOpinions from '../Componentes/CrudApiOpinions';
+import CrudApiOpinions from '../componentes/CrudApiOpinions';
 
 export const opiniones = () => {
      return (
