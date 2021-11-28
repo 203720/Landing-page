@@ -19,7 +19,7 @@ const inicio =()=>{
           </div>
         </div>
       </div>
-      <div className="logo"><img src="recursos/logo2.png" width="60px" /></div>
+      <div className="logo"><img src="recursos/logo.png" width="60px" /></div>
       <div className="text">M A J O R</div>
       <div className="text2">La mejor ropa vintage</div>
     </div>
