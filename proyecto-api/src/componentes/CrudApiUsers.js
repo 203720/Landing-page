@@ -107,12 +107,6 @@ const CrudApiUsers = () => {
                 datoEditar={datoEditar}
                 setDatoEditar={setDatoEditar}
             />
-
-            {db&& <CrudTableUsers 
-            data={db}
-            setDatoEditar={setDatoEditar}
-            borrarRegistro={borrarRegistro}    
-          />}
         </div>
     )
 }
