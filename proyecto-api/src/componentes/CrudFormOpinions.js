@@ -44,16 +44,17 @@ const CrudFormOpinions =({agregarRegistro, actualizarRegistro, datoEditar, setDa
      };
 
      return(
-                         <div class = "reseña">
-                              <h1>Cuéntanos tú experiencia</h1>
+          <div class = "reseña">
+                              <h1 class="h1">Cuéntanos tú experiencia</h1>
                               <form onSubmit={handleSubmit}>
-                                   <input type="text" name = "usuario" placeholder="usuario" onChange={handleChange} value={form.usuario}/>
-                                   <input type="number" name = "calificacion" min="0" max="10" placeholder="calificacion" onChange={handleChange} value={form.calificacion}/>
-                                   <input type="text" name = "comentario" placeholder="comentario" onChange={handleChange} value={form.comentario}/>
-                                   <div class="d-grid gap-2 d-md-block">
-                                        <button class= "btn btn-success" type="submit">Enviar</button>
-                                        <button class="btn btn-info" type="reset" onClick={handleReset}>Limpiar</button>
-                                   </div>
+                                   <input className="botones" type="text" name = "usuario" placeholder="usuario" onChange={handleChange} value={form.usuario}/>
+                                   <input className="botones" type="number" name = "calificacion" min="0" max="10" placeholder="calificacion" onChange={handleChange} value={form.calificacion}/>
+                                   <input className="botones" type="text" name = "comentario" placeholder="comentario" onChange={handleChange} value={form.comentario}/>
+                                  <div class="d-grid gap-2 d-md-block">
+                                   <button style={{width: '30rem'},{margin:10}} class=" btn btn-info" type="submit">Enviar</button>
+
+                                   <button  style={{width: '30rem'},{margin:10}} class=" btn btn-info" type="reset" value="Limpiar" onClick={handleReset}>Limpiar</button>
+                                 </div>
                               </form>
                          </div>
      );
