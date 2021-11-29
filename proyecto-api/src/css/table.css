@@ -1,6 +1,10 @@
 #usuarios{
-    width: 100%;
+    width: 96%;
     background-color: rgba(255, 255, 255, 0.213);
+    margin-top: 60px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 100px;
 }
 
 .wrapTable{
@@ -21,10 +25,11 @@ th{
 }
 
 .buttons{
-    width: 50%;
+    width: 40%;
     background-color: rgb(0, 163, 192);
     color: white;
     border-radius: 10px;
+    margin-right: 3%;
 }
 
 .buttons:hover{
