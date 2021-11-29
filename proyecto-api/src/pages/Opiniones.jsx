@@ -10,6 +10,10 @@ export const opiniones = () => {
      <>
     <CrudApiOpinions/>
     </>
+      <footer className="text-center text-white" >
+    <div className="socialLogos"><a href="https://www.facebook.com/profile.php?id=100069569205743" target="_blank"><img className="social" src="recursos/fb.png" width="44px" /></a></div>
+    <div className="socialLogos2"><a href="https://www.instagram.com/azul_briones/?hl=es" target="_blank"><img className="social" src="recursos/ig.png" width="40px" /></a></div><br />Azul Gissele Briones Zavala<br />Emilio Jarey Méndez Torres
+  </footer>
 </div>
      )
 }
