@@ -4,31 +4,33 @@ import '../css/inicio.css'
 const inicio =()=>{
      return(
          <div>
+                <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"></link>
+    
   <section>
     <div className="presentacion">
       <div className="slider-frame">
         <div className="slide-images">
-          <div className="img-containerInicio">
-            <div className="circleInicio"><img className="imagenInicio" src="recursos/4.jpg" /></div>
+          <div className="img-container">
+            <div className="circle"><img className="imagenInicio" src="recursos/4.jpg" /></div>
           </div>
-          <div className="img-containerInicio">
-            <div className="circleInicio"><img className="imagenInicio" src="recursos/1.jpg" /></div>
+          <div className="img-container">
+            <div className="circle"><img className="imagen" src="recursos/1.jpg" /></div>
           </div>
-          <div className="img-containerInicio">
-            <div className="circleInicio"><img className="imagenInicio" src="recursos/5.jpg" /></div>
+          <div className="img-container">
+            <div className="circle"><img className="imagen" src="recursos/5.jpg" /></div>
           </div>
         </div>
       </div>
       <div className="logo"><img src="recursos/logo.png" width="60px" /></div>
-      <div className="textInicio">M A J O R</div>
-      <div className="textInicio2">La mejor ropa vintage</div>
+      <div className="text">M A J O R</div>
+      <div className="text2">La mejor ropa vintage</div>
     </div>
   </section>
   <section>
     <div className="ofertas">
       <div className="circle"><img className="imagen" src="recursos/offer5.jpg" /></div>
       <center>
-        <h1>OFERTAS</h1>
+        <h1 className="texto-h1">OFERTAS</h1>
       </center>
       <div className="card-colums">
         <div className="card" style={{width: '18rem'}}>
@@ -36,7 +38,7 @@ const inicio =()=>{
           <div className="card-body">
             <h5 className="card-title">Camisa - $199</h5>
             <p className="card-text">Camisa beige con patrón caballero<br />Tallas: XL - L - M - S<br />Envío grátis</p>
-            <a href="compra.html" className="btn btn-primary">Comprar</a>
+            <a href="compra.html" className="btn btnCard-primary">Comprar</a>
           </div>
         </div>
         <div className="card" style={{width: '18rem'}}>
@@ -44,7 +46,7 @@ const inicio =()=>{
           <div className="card-body">
             <h5 className="card-title">Pantalones - $289</h5>
             <p className="card-text">Pantalón mezclilla dama<br />Tallas: XL - L - M - S - XS<br />Envío grátis</p>
-            <a href="compra.html" className="btn btn-primary">Comprar</a>
+            <a href="compra.html" className="btn btnCard-primary">Comprar</a>
           </div>
         </div>
         <div className="card" style={{width: '18rem'}}>
@@ -52,7 +54,7 @@ const inicio =()=>{
           <div className="card-body">
             <h5 className="card-title">Bolsa - $389</h5>
             <p className="card-text">Bolso elegante dama<br />Colores: Blanco con negro<br />Envío grátis</p>
-            <a href="compra.html" className="btn btn-primary">Comprar</a>
+            <a href="compra.html" className="btn btnCard-primary">Comprar</a>
           </div>
         </div>
       </div>
@@ -67,7 +69,7 @@ const inicio =()=>{
     <div className="wrapper">
       <div className="mostsold">
         <center>
-          <h2>Lo mas vendido</h2>
+          <h2 className="texto-h2">Lo mas vendido</h2>
         </center>
         <div className="presentacion">
           <div className="slider-frame2">
@@ -79,7 +81,7 @@ const inicio =()=>{
                     <div className="card-body">
                       <h5 className="card-title">Boina - $189</h5>
                       <p className="card-text">Boina azul suiza<br />Colores: Azul / Negra<br />Envío grátis</p>
-                      <a href="compra.html" className="btn btn-primary">Comprar</a>
+                      <a href="compra.html" className="btn btnCard-primary">Comprar</a>
                     </div>
                   </div>
                   <div className="card2" style={{width: '18rem'}}>
@@ -87,7 +89,7 @@ const inicio =()=>{
                     <div className="card-body">
                       <h5 className="card-title">Camisa colores - $199</h5>
                       <p className="card-text">Camisa patrón colores caballero<br />Tallas: XL - L - M - S<br />Envío grátis</p>
-                      <a href="compra.html" className="btn btn-primary">Comprar</a>
+                      <a href="compra.html" className="btn btnCard-primary">Comprar</a>
                     </div>
                   </div>
                 </div>
@@ -99,7 +101,7 @@ const inicio =()=>{
                     <div className="card-body">
                       <h5 className="card-title">Vestido - $319</h5>
                       <p className="card-text">Vestido rosa con botónes<br />Tallas: XL - L - M - S - XS<br />Envío grátis</p>
-                      <a href="compra.html" className="btn btn-primary">Comprar</a>
+                      <a href="compra.html" className="btn btnCard-primary">Comprar</a>
                     </div>
                   </div>
                   <div className="card2" style={{width: '18rem'}}>
@@ -107,7 +109,7 @@ const inicio =()=>{
                     <div className="card-body">
                       <h5 className="card-title">Sueter Chaleco - $299</h5>
                       <p className="card-text">Sueter tipo chaleco caballero<br />Tallas: XL - L - M - S<br />Envío grátis</p>
-                      <a href="compra.html" className="btn btn-primary">Comprar</a>
+                      <a href="compra.html" className="btn btnCard-primary">Comprar</a>
                     </div>
                   </div>
                 </div>
@@ -119,7 +121,7 @@ const inicio =()=>{
                     <div className="card-body">
                       <h5 className="card-title">Boina Militar - $299</h5>
                       <p className="card-text">Boina militar dama<br />Colores: Negro<br />Envío grátis</p>
-                      <a href="compra.html" className="btn btn-primary">Comprar</a>
+                      <a href="compra.html" className="btn btnCard-primary">Comprar</a>
                     </div>
                   </div>
                   <div className="card2" style={{width: '18rem'}}>
@@ -127,7 +129,7 @@ const inicio =()=>{
                     <div className="card-body">
                       <h5 className="card-title">Vestido Stripes - $329</h5>
                       <p className="card-text">Vestido rayas blancas azules<br />Tallas: XL - L - M - S - XS<br />Envío grátis</p>
-                      <a href="compra.html" className="btn btn-primary">Comprar</a>
+                      <a href="compra.html" className="btn btnCard-primary">Comprar</a>
                     </div>
                   </div>
                 </div>
@@ -138,7 +140,7 @@ const inicio =()=>{
       </div>
       <div className="popular">
         <center>
-          <h2>Tendencia</h2>
+          <h2 className="texto-h2">Tendencia</h2>
         </center>
         <div className="presentacion">
           <div className="slider-frame2">
@@ -150,7 +152,7 @@ const inicio =()=>{
                     <div className="card-body">
                       <h5 className="card-title">Vestido Negro - $349</h5>
                       <p className="card-text">Vestido negro holgado corto<br />Tallas: XL - L - M - S - XS<br />Envío grátis</p>
-                      <a href="compra.html" className="btn btn-primary">Comprar</a>
+                      <a href="compra.html" className="btn btnCard-primary">Comprar</a>
                     </div>
                   </div>
                   <div className="card2" style={{width: '18rem'}}>
@@ -158,7 +160,7 @@ const inicio =()=>{
                     <div className="card-body">
                       <h5 className="card-title">Boina - $199</h5>
                       <p className="card-text">Boina rosa palo unisex<br />Colores: Rosa palo<br />Envío grátis</p>
-                      <a href="compra.html" className="btn btn-primary">Comprar</a>
+                      <a href="compra.html" className="btn btnCard-primary">Comprar</a>
                     </div>
                   </div>
                 </div>
@@ -170,7 +172,7 @@ const inicio =()=>{
                     <div className="card-body">
                       <h5 className="card-title">Camisa Algodón - $349</h5>
                       <p className="card-text">Camisa tela suave caballero<br />Tallas: XL - L - M - S<br />Envío grátis</p>
-                      <a href="compra.html" className="btn btn-primary">Comprar</a>
+                      <a href="compra.html" className="btn btnCard-primary">Comprar</a>
                     </div>
                   </div>
                   <div className="card2" style={{width: '18rem'}}>
@@ -178,7 +180,7 @@ const inicio =()=>{
                     <div className="card-body">
                       <h5 className="card-title">Camisa Tirantes - $599</h5>
                       <p className="card-text">Camisa con tirantes pajarita<br />Tallas: XL - L - M - S<br />Envío grátis</p>
-                      <a href="compra.html" className="btn btn-primary">Comprar</a>
+                      <a href="compra.html" className="btn btnCard-primary">Comprar</a>
                     </div>
                   </div>
                 </div>
@@ -190,7 +192,7 @@ const inicio =()=>{
                     <div className="card-body">
                       <h5 className="card-title">Camisa Stripes - $199</h5>
                       <p className="card-text">Camisa rayas negras caballero<br />Tallas: XL - L - M - S<br />Envío grátis</p>
-                      <a href="compra.html" className="btn btn-primary">Comprar</a>
+                      <a href="compra.html" className="btn btnCard-primary">Comprar</a>
                     </div>
                   </div>
                   <div className="card2" style={{width: '18rem'}}>
@@ -198,7 +200,7 @@ const inicio =()=>{
                     <div className="card-body">
                       <h5 className="card-title">Pantalones hombre - $299</h5>
                       <p className="card-text">Pantalones vintage slim<br />Tallas: XL - L - M - S<br />Envío grátis</p>
-                      <a href="compra.html" className="btn btn-primary">Comprar</a>
+                      <a href="compra.html" className="btn btnCard-primary">Comprar</a>
                     </div>
                   </div>
                 </div>
