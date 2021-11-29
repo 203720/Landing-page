@@ -45,7 +45,7 @@ const CrudFormOpinions =({agregarRegistro, actualizarRegistro, datoEditar, setDa
 
      return(
                          <div class = "reseña">
-                              <h1 class="h1">Cuéntanos tú experiencia</h1>
+                              <h1>Cuéntanos tú experiencia</h1>
                               <form onSubmit={handleSubmit}>
                                    <input type="text" name = "usuario" placeholder="usuario" onChange={handleChange} value={form.usuario}/>
                                    <input type="number" name = "calificacion" min="0" max="10" placeholder="calificacion" onChange={handleChange} value={form.calificacion}/>
