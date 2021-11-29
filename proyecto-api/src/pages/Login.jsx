@@ -7,7 +7,7 @@ export const Login = () => {
         <div class="wrapper">
         <div className="contact-wrapper-login">
           <div className="login">
-            <h1>Iniciar Sesión</h1>
+            <h1 id="log">Iniciar Sesión</h1>
             <br />
             <form method="post">
               <input className="inputLogin" id="user" type="text" name="u" placeholder="Usuario" required="required" />

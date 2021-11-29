@@ -188,7 +188,7 @@ footer {
   background-color: rgb(0, 161, 179);
   color: rgb(255, 255, 255);
   border-color: rgb(0, 0, 0);
-}
+}/*
 h1 {
   position: absolute;
   left: 45%;
@@ -197,7 +197,7 @@ h1 {
   font-size: 44px;
   text-shadow: 2px 2px 6px black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
+}*/
 h2 {
   position: relative;
   margin-top: 2%;

@@ -183,7 +183,7 @@ nav > ul > li{
 	width:300px;
 	height:300px;
 }
-.login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; margin-bottom: 15%; }
+#id { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; margin-bottom: 15%; }
 
 input { 
 	width: 100%; 
