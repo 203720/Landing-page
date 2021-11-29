@@ -1,4 +1,4 @@
-    .card{
+    .cardCategorias{
         position: relative;
         width: 100%;
         height: 400px;
@@ -8,23 +8,23 @@
         background-color: rgb(255, 255, 255);
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.453);
     }
-    .btn-primary{
+    .btnCategorias-primary{
         background-color: rgb(0, 0, 0);
         border-color: whitesmoke;
         color: rgb(255, 255, 255);
     }
 
-    .btn-primary:hover{
+    .btnCategorias-primary:hover{
         background-color: rgb(0, 161, 179);;
         color: rgb(255, 255, 255);
         border-color: rgb(0, 0, 0);
     }
-    .btn-primary:focus{
+    .btnCategorias-primary:focus{
       background-color: rgb(0, 161, 179);;
       color: rgb(255, 255, 255);
       border-color: rgb(0, 0, 0);
   }
-    .card-colums{
+    .cardCategorias-colums{
         display: flex;
         position: relative;
         background-color: rgba(255, 255, 255, 0.282);
@@ -36,13 +36,22 @@
         box-shadow: 2px 2px 15px rgb(0, 0, 0);
     }
 
-    .card-img-top{
+    .cardCategorias-img-top{
         object-fit: cover;
         height: 200px;
       }
 
-      .card-title{
+      .cardCategorias-title{
         filter: brightness(120%);
         color: rgb(0, 124, 138);
         font-weight: 600;
+      }
+
+      h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 40px;
+        color: rgb(230, 230, 230);
+        text-align: center;
+        margin-top: 30px;
+        text-shadow: 2px 2px 4px rgb(0, 135, 158);
       }
