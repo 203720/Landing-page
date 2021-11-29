@@ -10,8 +10,8 @@ const CrudTableFilaUsers=({el, setDatoEditar, borrarRegistro})=>{
             <td>{email}</td>
             <td>{password}</td>
              <td>
-                <button class="buttons" onClick={() => setDatoEditar(el) }>Editar</button>
-                <button class="buttons" onClick={() => borrarRegistro(id) }>Eliminar</button>
+                <button  class="buttons" onClick={() => setDatoEditar(el) }>Editar</button>
+                <button  class="buttons" onClick={() => borrarRegistro(id) }>Eliminar</button>
              </td>
         </tr>
      );
