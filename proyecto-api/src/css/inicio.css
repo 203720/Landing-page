@@ -66,7 +66,7 @@
   position: absolute;
   filter: brightness(80%) blur(3px);
 }
-.text {
+.textInicio {
   font-size: 92px;
   padding: 8px 12px;
   position: absolute;
@@ -80,7 +80,7 @@
   filter: brightness(130%);
   color: rgb(0, 124, 138);
 }
-.text2 {
+.textInicio2 {
   color: #e4e4e4;
   font-style: bold;
   font-size: 32px;

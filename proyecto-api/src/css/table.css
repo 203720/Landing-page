@@ -9,7 +9,8 @@
 
 h3{
     text-align: center;
-    text-shadow: 1px 1px 15px;
+    text-shadow: 1px 1px 15px black;
+    color: white;
 }
 
 th{
