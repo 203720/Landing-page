@@ -1,11 +1,11 @@
-.textCompra {
+.texto-compra {
   position: relative;
   top: 30%;
   left: 30%;
   width: 800px;
 }
 
-.textCompra p {
+.texto-compra p {
   font-family: sans-serif;
   color: #fff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.604);
