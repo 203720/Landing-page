@@ -1,12 +1,13 @@
 import React from 'react';
-//import './App.css';
-import './css/admin.css';
-import './css/categorias.css';
-import './css/compra.css';
-import './css/inicio.css';
-import './css/login.css';
-import './css/nosotros.css';
-import './css/opiniones.css';
+import './App.css';
+//import './index.css';
+//import './css/admin.css';
+//import './css/categorias.css';
+//import './css/compra.css';
+//import './css/inicio.css';
+//import './css/login.css';
+//import './css/nosotros.css';
+//import './css/opiniones.css';
 
 
 import {
@@ -50,21 +51,7 @@ function App() {
         </nav>
         
 
-        <footer>
-          <div class="socialLogos">
-            <a href="https://www.facebook.com/profile.php?id=100069569205743" target="_blank">
-              <img  class="social" src="recursos/fb.png" width="44px"></img></a>
-          </div>
 
-          <div class="socialLogos2">
-            <a href="https://www.instagram.com/azul_briones/?hl=es" target="_blank">
-              <img class="social" src="recursos/ig.png" width="40px"></img></a>
-          </div>
-          <br></br>
-          Azul Gissele Briones Zavala
-          <br></br>
-          Emilio Jarey Méndez Torres
-        </footer>
 
         <Routes>
            <Route path="/" element={<Inicio />} />
