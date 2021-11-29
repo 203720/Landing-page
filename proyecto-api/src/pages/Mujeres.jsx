@@ -3,7 +3,9 @@ import '../css/categorias.css'
 
 export const Mujeres = () => {
      return (
-          <div>
+       
+          <div style={{backgroundImage:`url(recursos/mujeres.jpg)`}}>
+            <link  rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
   <h1>DAMAS</h1>
   <div className="cardCategorias-colums">
     <div className="cardCategorias" style={{width: '18rem'}}>
