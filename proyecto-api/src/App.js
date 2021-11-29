@@ -1,14 +1,5 @@
 import React from 'react';
 import './App.css';
-//import './index.css';
-//import './css/admin.css';
-//import './css/categorias.css';
-//import './css/compra.css';
-//import './css/inicio.css';
-//import './css/login.css';
-//import './css/nosotros.css';
-//import './css/opiniones.css';
-
 
 import {
   BrowserRouter as Router,
