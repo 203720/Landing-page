@@ -1,6 +1,6 @@
 import React, { useEffect, useState }  from 'react'
 import {helpHttp} from "../helpers/helpHTTP";
-import  CrudFormUsers  from './CrudFormUsers';
+import  CrudFormUsersAdmin  from './CrudFormUsersAdmin';
 import CrudTableUsers from "./CrudTableUsers";
 
 
@@ -101,8 +101,7 @@ const CrudApiUsersAdmin = () => {
 
     return(
         <div>
-            <CrudFormUsers 
-                agregarRegistro={agregarRegistro}
+            <CrudFormUsersAdmin
                 actualizarRegistro={actualizarRegistro}
                 datoEditar={datoEditar}
                 setDatoEditar={setDatoEditar}
