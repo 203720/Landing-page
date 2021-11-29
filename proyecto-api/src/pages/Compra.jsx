@@ -3,7 +3,7 @@ import '../css/compra.css'
 
 export const Compra = () => {
      return (
-          <div className="text">
+          <div className="textCompra">
                <p>PROXIMAMENTE...</p>
           </div>
      )
