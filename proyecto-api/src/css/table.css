@@ -21,11 +21,11 @@ th{
 
 .buttons{
     width: 50%;
-    background-color: rgb(0, 192, 192);
+    background-color: rgb(0, 163, 192);
 }
 
 .buttons:hover{
-    background-color: aqua;
+    background-color: rgb(0, 225, 255);
 }
 
 
