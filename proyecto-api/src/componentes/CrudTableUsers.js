@@ -5,12 +5,12 @@ import '../css/table.css'
 const CrudTableUsers = ({data, setDatoEditar, borrarRegistro})=>{
      return(
         <div class="wrapTable">
-            <h3>Tabla de Datos</h3>
+            <h3>Tabla de registros</h3>
             <table id="usuarios">
                     <tr>
-                        <th>Usuarios</th>
-                        <th>Emails</th>
-                        <th>Contraseñas</th>
+                        <th>Usuario</th>
+                        <th>Correo electrónico</th>
+                        <th>Contraseña</th>
                     </tr>
                 <tbody>
                     {data.length >0?
@@ -25,12 +25,13 @@ const CrudTableUsers = ({data, setDatoEditar, borrarRegistro})=>{
                
                     ):(
 
-                        <tr><td colSpan="3">Sin datos</td>
+                        <tr><td colSpan="5">Sin datos</td>
                         </tr>
 
                         ) }
                 </tbody>
             </table>
+            <br></br>
         </div>
      );
 };
