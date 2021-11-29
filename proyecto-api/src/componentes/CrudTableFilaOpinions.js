@@ -14,8 +14,8 @@ const CrudTableFilaOpinions=({el, setDatoEditar, borrarRegistro})=>{
                                    </div>
                               </div>
                     <div class="d-grid gap-2 d-md-block">
-                         <button class=" btn btn-info" type="button"onClick={()=>setDatoEditar(el)}>Editar</button>
-                         <button class="btn btn-danger" type="button"onClick={()=>borrarRegistro(id)}>Eliminar</button>
+                         <button style={{width: '30rem'},{margin:10}} class=" btn btn-info" onClick={()=>setDatoEditar(el)}>Editar</button>
+                         <button style={{width: '30rem'},{margin:10}} class="btn btn-danger" onClick={()=>borrarRegistro(id)}>Eliminar</button>
                     </div>
                </div>
      );
