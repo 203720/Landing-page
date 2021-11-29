@@ -31,6 +31,7 @@ const CrudFormUsers =({agregarRegistro, actualizarRegistro, datoEditar, setDatoE
 
           if (form.id===null) {
                agregarRegistro(form);
+               alert("Datos enviados");
           }else{
                actualizarRegistro(form);
           }
@@ -51,8 +52,8 @@ const CrudFormUsers =({agregarRegistro, actualizarRegistro, datoEditar, setDatoE
                               <h1>Registrate</h1>
                               <form onSubmit={handleSubmit}>
                                    <input type="text" name = "user" placeholder="Usuario" onChange={handleChange} value={form.user}/>
-                                   <input type="email" name = "email" placeholder="user@gmail.com" onChange={handleChange} value={form.email}/>
-                                   <input type="password" name = "password" placeholder="password" onChange={handleChange} value={form.password}/>
+                                   <input type="email" name = "email" placeholder="Correo electrónico" onChange={handleChange} value={form.email}/>
+                                   <input type="password" name = "password" placeholder="Contraseña" onChange={handleChange} value={form.password}/>
                                    <button  id="signin" className="btn btn-primary btn-block btn-large" type="submit" >Registrarse</button>
                                    <button  id="signin" className="btn btn-primary btn-block btn-large"  type="reset" onClick={handleReset}>Limpiar</button>
                               </form>
