@@ -46,7 +46,6 @@ function App() {
             <li className="menu"><Link to="/Nosotros" className="hvr-underline-from-center">SOBRE NOSOTROS</Link></li>
             <li className="menu"><Link to="/Compra" className="hvr-underline-from-center"><img class="icon" src="recursos/carrito.png"></img></Link></li>
             <li className="menu"><Link to="/Login" className="hvr-underline-from-center"><img class="icon" src="recursos/login.png"></img></Link></li>
-            <li className="menu"><Link to="/Admin" className="hvr-underline-from-center"><img class="icon" src="recursos/admin.png"></img></Link></li>
           </ul>
         </nav>
         <Routes>
