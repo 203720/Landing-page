@@ -1,4 +1,4 @@
-    .cardCategorias{
+    .cardCate{
         position: relative;
         width: 100%;
         height: 400px;
@@ -8,23 +8,8 @@
         background-color: rgb(255, 255, 255);
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.453);
     }
-    .btnCategorias-primary{
-        background-color: rgb(0, 0, 0);
-        border-color: whitesmoke;
-        color: rgb(255, 255, 255);
-    }
 
-    .btnCategorias-primary:hover{
-        background-color: rgb(0, 161, 179);;
-        color: rgb(255, 255, 255);
-        border-color: rgb(0, 0, 0);
-    }
-    .btnCategorias-primary:focus{
-      background-color: rgb(0, 161, 179);;
-      color: rgb(255, 255, 255);
-      border-color: rgb(0, 0, 0);
-  }
-    .cardCategorias-colums{
+    .cardCate-colums{
         display: flex;
         position: relative;
         background-color: rgba(255, 255, 255, 0.282);
@@ -36,12 +21,12 @@
         box-shadow: 2px 2px 15px rgb(0, 0, 0);
     }
 
-    .cardCategorias-img-top{
+    .card-img-top{
         object-fit: cover;
         height: 200px;
       }
 
-      .cardCategorias-title{
+      .card-title{
         filter: brightness(120%);
         color: rgb(0, 124, 138);
         font-weight: 600;
