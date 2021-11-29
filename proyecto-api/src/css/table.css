@@ -23,11 +23,13 @@ th{
     width: 50%;
     background-color: rgb(0, 163, 192);
     color: white;
+    border-radius: 10px;
 }
 
 .buttons:hover{
     background-color: rgb(0, 225, 255);
     color: black;
+    border-radius: 10px;
 }
 
 
