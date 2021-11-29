@@ -44,21 +44,22 @@ const CrudFormUsers =({agregarRegistro, actualizarRegistro, datoEditar, setDatoE
      };
 
      return(        
-           <div className="contact-wrapper-login">
-                <div class = "login">
+          <div class="container">
+               <div class="wrapper">
+                    <div className="contact-wrapper-signin">
+                         <div class = "signin">
                               <h1>Registrate</h1>
                               <form onSubmit={handleSubmit}>
                                    <input type="text" name = "user" placeholder="Usuario" onChange={handleChange} value={form.user}/>
                                    <input type="email" name = "email" placeholder="user@gmail.com" onChange={handleChange} value={form.email}/>
                                    <input type="password" name = "password" placeholder="password" onChange={handleChange} value={form.password}/>
-                                   <div class="d-grid gap-2 d-md-block">
-                                        <button id="signin" className="btn btn-primary btn-block btn-large" type="submit">Registrarse</button>
-                                        <button id="signin" className="btn btn-primary btn-block btn-large"  type="reset" onClick={handleReset}>Limpiar</button>
-                                   </div>
+                                   <button id="signin" className="btn btn-primary btn-block btn-large" type="submit">Registrarse</button>
+                                   <button id="signin" className="btn btn-primary btn-block btn-large"  type="reset" onClick={handleReset}>Limpiar</button>
                               </form>
                          </div>
-           </div>
-
+                    </div>
+               </div>
+          </div>
      );
 };
 
