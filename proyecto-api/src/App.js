@@ -34,25 +34,21 @@ function App() {
     <Router>
         <nav>
           <ul>
-            <li className="menu"><Link to="/" className="hvr-underline-from-center">Inicio</Link></li>
-            <li class="menu"><a class="hvr-underline-from-center" href="#">Categorias</a>
+            <li className="menu"><Link to="/" className="hvr-underline-from-center">INICIO</Link></li>
+            <li class="menu"><a class="hvr-underline-from-center" href="#">CATEGORIAS</a>
               <ul className="ani-menu">
-                <li><Link to="/Hombres" className="hvr-underline-from-center">Caballeros</Link></li>
-                <li><Link to="/Mujeres" className="hvr-underline-from-center">Damas</Link></li>
-                <li><Link to="/Menores" className="hvr-underline-from-center">Niños</Link></li>
+                <li><Link to="/Hombres" className="hvr-underline-from-center">CABALLERO</Link></li>
+                <li><Link to="/Mujeres" className="hvr-underline-from-center">DAMA</Link></li>
+                <li><Link to="/Menores" className="hvr-underline-from-center">NIÑOS</Link></li>
               </ul>
             </li>
-            <li className="menu"><Link to="/Opiniones" className="hvr-underline-from-center">Opiniones</Link></li>
-            <li className="menu"><Link to="/Nosotros" className="hvr-underline-from-center">Sobre nosotros</Link></li>
+            <li className="menu"><Link to="/Opiniones" className="hvr-underline-from-center">OPINIONES</Link></li>
+            <li className="menu"><Link to="/Nosotros" className="hvr-underline-from-center">SOBRE NOSOTROS</Link></li>
             <li className="menu"><Link to="/Compra" className="hvr-underline-from-center"><img class="icon" src="recursos/carrito.png"></img></Link></li>
             <li className="menu"><Link to="/Login" className="hvr-underline-from-center"><img class="icon" src="recursos/login.png"></img></Link></li>
             <li className="menu"><Link to="/Admin" className="hvr-underline-from-center"><img class="icon" src="recursos/admin.png"></img></Link></li>
           </ul>
         </nav>
-        
-
-
-
         <Routes>
            <Route path="/" element={<Inicio />} />
            <Route path="/Mujeres" element={<Mujeres />} />
