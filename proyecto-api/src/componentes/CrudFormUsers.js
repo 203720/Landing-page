@@ -53,8 +53,8 @@ const CrudFormUsers =({agregarRegistro, actualizarRegistro, datoEditar, setDatoE
                                    <input type="text" name = "user" placeholder="Usuario" onChange={handleChange} value={form.user}/>
                                    <input type="email" name = "email" placeholder="user@gmail.com" onChange={handleChange} value={form.email}/>
                                    <input type="password" name = "password" placeholder="password" onChange={handleChange} value={form.password}/>
-                                   <button id="signin" className="btn btn-primary btn-block btn-large" type="submit">Registrarse</button>
-                                   <button id="signin" className="btn btn-primary btn-block btn-large"  type="reset" onClick={handleReset}>Limpiar</button>
+                                   <button  id="signin" className="btn btn-primary btn-block btn-large" type="submit" >Registrarse</button>
+                                   <button  id="signin" className="btn btn-primary btn-block btn-large"  type="reset" onClick={handleReset}>Limpiar</button>
                               </form>
                          </div>
                     </div>
