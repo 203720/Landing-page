@@ -1,19 +1,17 @@
 import React from "react";
 import CrudTableFilaUsers from "./CrudTableFilaUsers";
-
+import '../css/table.css'
 //props
 const CrudTableUsers = ({data, setDatoEditar, borrarRegistro})=>{
      return(
-        <div>
+        <div class="wrapTable">
             <h3>Tabla de Datos</h3>
-            <table>
-                <thread>
+            <table id="usuarios">
                     <tr>
                         <th>Usuarios</th>
                         <th>Emails</th>
                         <th>Contraseñas</th>
                     </tr>
-                </thread>
                 <tbody>
                     {data.length >0?
 
