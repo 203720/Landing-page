@@ -1,3 +1,65 @@
+@keyframes transitionIn {
+  from {
+    opacity: 0.5;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  -moz-transform: perspective(1px) translateZ(0);
+  -ms-transform: perspective(1px) translateZ(0);
+  -o-transform: perspective(1px) translateZ(0);
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: rgb(0, 124, 138);
+  filter: brightness(130%);
+  height: 4px;
+  text-shadow: 2px 2px 4px white;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  text-decoration: none;
+}
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:hover,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 8px rgb(255, 255, 255);
+  left: 0;
+  right: 0;
+}
+
+.icon {
+  float: right;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
 .presentacion {
   position: relative;
   width: 100%;
@@ -49,6 +111,20 @@
     left: 0px;
   }
 }
+
+.slide-images {
+  width: 5760px;
+  height: 600px;
+  margin: 0 0 0 -3840px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 33s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .img-container {
   height: 600px;
   width: 1920px;
@@ -66,7 +142,7 @@
   position: absolute;
   filter: brightness(80%) blur(3px);
 }
-.textInicio {
+.text {
   font-size: 92px;
   padding: 8px 12px;
   position: absolute;
@@ -80,7 +156,7 @@
   filter: brightness(130%);
   color: rgb(0, 124, 138);
 }
-.textInicio2 {
+.text2 {
   color: #e4e4e4;
   font-style: bold;
   font-size: 32px;
@@ -129,19 +205,6 @@
   position: relative;
 }
 
-footer {
-  margin-top: 20px;
-  background-color: rgb(29, 29, 29);
-  position: absolute;
-  height: 8%;
-  width: 100%;
-  color: rgb(233, 233, 233);
-  text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-}
-
 .oferta {
   width: 140px;
   height: 110px;
@@ -171,25 +234,10 @@ footer {
   margin: 4em;
   background-color: rgb(255, 255, 255);
   box-shadow: 2px 2px 15px rgb(0, 0, 0);
-}
 
-.btn-primary {
-  background-color: rgb(0, 0, 0);
-  border-color: whitesmoke;
-  color: rgb(255, 255, 255);
+  
 }
-
-.btn-primary:hover {
-  background-color: rgb(0, 161, 179);
-  color: rgb(255, 255, 255);
-  border-color: rgb(0, 0, 0);
-}
-.btn-primary:focus {
-  background-color: rgb(0, 161, 179);
-  color: rgb(255, 255, 255);
-  border-color: rgb(0, 0, 0);
-}/*
-h1 {
+.texto-h1 {
   position: absolute;
   left: 45%;
   margin-top: 1%;
@@ -197,8 +245,8 @@ h1 {
   font-size: 44px;
   text-shadow: 2px 2px 6px black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}*/
-h2 {
+}
+.texto-h2 {
   position: relative;
   margin-top: 2%;
   color: rgb(0, 124, 138);
@@ -325,17 +373,6 @@ h2 {
   float: left;
   overflow-x: hidden;
   overflow-y: hidden;
-}
-
-.card-img-top {
-  object-fit: cover;
-  height: 200px;
-}
-
-.card-title {
-  filter: brightness(120%);
-  color: rgb(0, 124, 138);
-  font-weight: 600;
 }
 
 .logo {
